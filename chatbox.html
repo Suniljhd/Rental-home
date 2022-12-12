@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+</head>
+<body>
+    <div class="hadder">
+        <div class="navbar">
+            <h2><i class="fa-solid fa-house"></i><br>
+                RENTAL<i class="fa-solid fa-house"></i></h2>
+            <div class="country_select" id="country">
+                <div class="select">
+                    <p id="text">Select Your City</p>
+                    <i class="fa-solid fa-chevron-down" id="moving"></i>
+                </div>
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfunction('Kota')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Kota</p>
+                    </li>
+                    <li class="option" onclick="myfunction('jaipur')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>jaipur</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Bundi')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Bundi</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Bara')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Bara</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Pali')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Pali</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Jodhpur')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Jodhpur</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Udaipur')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Udaipur</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Bhilwara')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Bhilwara</p>
+                    </li>
+                    <li class="option" onclick="myfunction('jhalawar')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>jhalawar</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Alwar')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Alwar</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Ajmer')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Ajmer</p>
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+            <div class="search_box">
+                <input type="text" class="searchclass" id="searchid" placeholder=" Find Flate,Room,Afartment">
+                <p> <i class="fa-solid fa-magnifying-glass"></i></p>
+            </div>
+
+
+            <div class="message">
+                <i class="fa-solid fa-comment-dots"></i>
+            </div>
+            <div class="message">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+
+
+            <div class="your_logo">
+                <div class="girl" id="girl_id">
+                 
+                    <img src="https://i.pinimg.com/originals/e9/36/ab/e936ab240156c33be7974c2c36188bdf.jpg">
+
+                </div>
+
+                <div class="dropdown" id="gropdownid">
+
+                    <div class="nameid">
+                      
+                        <img src="https://i.pinimg.com/originals/e9/36/ab/e936ab240156c33be7974c2c36188bdf.jpg">
+                        <p>Nobita</p>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-user"></i>
+                            <p>My Account</p>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-box"></i>
+                            <p>My Order</p>
+                        </li>
+                        <li>
+                            <i class="fa-sharp fa-solid fa-question"></i>
+                            <p>Help</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Setting</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                           <a href="login.html"> <p>Log Out</p></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+            <div class="selling_page">
+                <i class="fa-light fa-plus"></i>
+                <p>POST</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="chat_box">
+         <div class="heading_chatbox">
+            <div class="img_name_chat">
+                
+                <img src="https://i.pinimg.com/736x/a8/12/aa/a812aad6eaa53a7a0ab4c71ca1d3b0b7.jpg">
+                <h2>Nikita</h2>
+
+            </div>
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+         </div>
+         <div class="see_chat">
+            <h3 id="message" > </h3>
+         </div>
+         <div class="send_message">
+            <input type="text" placeholder="Type a messaage" id="text_message">
+            <input type="text" placeholder="Type a messaage" id="demo">
+            <i class="fa-solid fa-paper-plane" id="send_icon"></i>
+           
+         </div>
+         
+         
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let country = document.getElementById("country");
+        let moving = document.getElementById("moving");
+        let text = document.getElementById("text");
+        let list = document.getElementById("list");
+
+        country.addEventListener('click', () => {
+            list.classList.toggle('hidden')
+            moving.classList.toggle('roted');
+        });
+        function myfunction(nikhil) {
+            text.innerHTML = nikhil;
+        };
+
+
+        let girl_id = document.getElementById("girl_id");
+        let gropdownid = document.getElementById("gropdownid");
+        girl_id.addEventListener('click', () => {
+            gropdownid.classList.toggle('block_div')
+        });
+
+let send_icon = document.getElementById('send_icon');
+let message = document.getElementById('message');
+let  text_message = document.getElementById('text_message');
+let demo = document.getElementById('demo');
+
+send_icon.addEventListener('click', ()=>{
+message.innerHTML = text_message.value;
+message.style = 'display:block';
+text_message.value = demo.value;
+
+})
+
+    </script>
+</body>
+</html>

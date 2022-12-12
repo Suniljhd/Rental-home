@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    
+</head>
+
+<body>
+
+    <div class="hadder">
+        <div class="navbar">
+            <h2><i class="fa-solid fa-house"></i><br>
+                RENTAL<i class="fa-solid fa-house"></i></h2>
+            <div class="country_select" id="country">
+                <div class="select">
+                    <p id="text">Select Your City</p>
+                    <i class="fa-solid fa-chevron-down" id="moving"></i>
+                </div>
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfunction('Kota')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Kota</p>
+                    </li>
+                    <li class="option" onclick="myfunction('jaipur')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>jaipur</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Bundi')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Bundi</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Bara')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Bara</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Pali')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Pali</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Jodhpur')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Jodhpur</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Udaipur')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Udaipur</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Bhilwara')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Bhilwara</p>
+                    </li>
+                    <li class="option" onclick="myfunction('jhalawar')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>jhalawar</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Alwar')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Alwar</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Ajmer')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Ajmer</p>
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+            <div class="search_box">
+                <input type="text" class="searchclass" id="searchid" placeholder=" Find Flate,Room,Afartment">
+                <p> <i class="fa-solid fa-magnifying-glass"></i></p>
+            </div>
+
+
+            <div class="message">
+                <i class="fa-solid fa-comment-dots"></i>
+            </div>
+            <div class="message">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+
+
+            <div class="your_logo">
+                <div class="girl" id="girl_id">
+                    <img src="https://i.pinimg.com/originals/e9/36/ab/e936ab240156c33be7974c2c36188bdf.jpg">
+
+                </div>
+
+                <div class="dropdown" id="gropdownid">
+
+                    <div class="nameid">
+                        <img src="https://i.pinimg.com/originals/e9/36/ab/e936ab240156c33be7974c2c36188bdf.jpg">
+                        <p>Nobita</p>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-user"></i>
+                            <p>My Account</p>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-box"></i>
+                            <p>My Order</p>
+                        </li>
+                        <li>
+                            <i class="fa-sharp fa-solid fa-question"></i>
+                            <p>Help</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Setting</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                           <a href="login.html"> <p>Log Out</p></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+            <div class="selling_page">
+                <i class="fa-light fa-plus"></i>
+                <p>POST</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="ad_img">
+        <img src="https://www.htclassifieds.com/application/static/assets/css/icons/rental-banner.jpg">
+        <i class="fa-solid fa-square-xmark" id="ad_icon"></i>
+    </div>
+
+    <div class="post_img">
+        <div class="image_discription">
+
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <img src="https://rentforroom.com/image/FB_IMG_1589340664054.jpg"></div>
+                    <div class="swiper-slide"><img
+                            src="https://is1-3.housingcdn.com/01c16c28/a7ee5dfb4576394df75e63bd09419e02/v0/fs/1_bhk_apartment-for-rent-lalarpura-Jaipur-bedroom.jpg">
+                    </div>
+                    <div class="swiper-slide"><img
+                            src="https://dbz-images.dubizzle.com/images/2022/11/28/74adac60bd9343f49ecd7dd38bd9f631-.jpeg?imwidth=800">
+                    </div>
+                    <div class="swiper-slide"><img src="https://rentforroom.com/image/FB_IMG_1589340664054.jpg"></div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev" id="prev"></div>
+                <div class="swiper-button-next" id="next"></div>
+
+            </div>
+
+            <div class="description">
+                <h3> Description </h3>
+                <p>Rooms are very Furnised and clean with furnture and a long bed and late bath are attached with room it is a good  for single person. <br>
+                    Attached late bath,balkani, bed.<br>
+                    
+                    MRP 3,500</p>
+            </div>
+
+        </div>
+         <div class="details">
+            <div class="box">
+                <div class="price">
+                    <h3>₹3,500</h3>
+                    <div>
+                        <p><i class="fa-regular fa-share-nodes"></i></p>
+                        <p><i class="fa-regular fa-heart"></i></p>
+                    </div>
+                </div>
+                <span> 1BHK Flat</span>
+                <div class="location">
+                    <p>Balaji town ,kunhari ,kota ,Rajsthan</p>
+                    <p>2 day ago</p>
+                </div>
+            </div>
+                      
+                <div class="box" id="box2" >
+                    <p class="Owner_description">Owner Description</p>
+                    <div class="owner_detail">
+                        <img src="https://i.pinimg.com/736x/a8/12/aa/a812aad6eaa53a7a0ab4c71ca1d3b0b7.jpg">
+                        <div>
+                            <h2>Nikita</h2>
+                            <p>Member since Nov 2021</p>
+                        </div>
+                    </div>
+                    <a href="chatbox.html">Chat With Owner</a>
+                </div>
+                      
+                     <div class="box" id="box3">
+                        <h2>Posted in</h2>
+                        <p>Balaji town , kota </p>
+                        <img src="https://cache.careers360.mobi/media/presets/768X400/colleges/staticmap/2021/9/16/21766.png">
+                     </div>
+         </div> 
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        let country = document.getElementById("country");
+        let moving = document.getElementById("moving");
+        let text = document.getElementById("text");
+        let list = document.getElementById("list");
+
+        country.addEventListener('click', () => {
+            list.classList.toggle('hidden')
+            moving.classList.toggle('roted');
+        });
+        function myfunction(nikhil) {
+            text.innerHTML = nikhil;
+        };
+
+
+        let girl_id = document.getElementById("girl_id");
+        let gropdownid = document.getElementById("gropdownid");
+        girl_id.addEventListener('click', () => {
+            gropdownid.classList.toggle('block_div')
+        });
+
+        let ad_img = document.querySelector('.ad_img');
+        let ad_icon = document.getElementById('ad_icon');
+
+        ad_icon.addEventListener('click', () => {
+            ad_img.style = 'display: none';
+        });
+
+        const swiper = new Swiper('.swiper', {
+
+            loop: true,
+
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        });
+
+    </script>
+</body>
+
+</html>

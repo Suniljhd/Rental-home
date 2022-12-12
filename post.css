@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: inherit;
+    }
+    body{
+        background-color: #f2f4f5;
+    }
+    
+    .hadder{
+        /* /* background-color: #e0dbdb; */
+          background-color: #cbccde92;
+        box-shadow: 0 0 2px rgba(220, 214, 214, 0.348);
+        position: sticky;
+        top:0%;
+        
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        width: 1300px;
+        margin: auto;
+        
+    }
+    .navbar h2 i{
+        padding-top: 23px;
+        color:brown;
+        font-size: 30px;
+        margin-right: 10PX;
+    }
+    .navbar h2{
+    
+        display: flex;
+        font-family:fantasy;
+        /* background-image: url("https://thumbs.dreamstime.com/b/house-rent-model-banner-48989831.jpg"); */
+        padding-bottom: 17px;
+        text-decoration: underline rgba(255, 0, 0, 0.486);
+        
+        
+    }
+    
+  
+    .country_select{
+        width:500px;
+        margin-left: 70px;
+        /* height: 100px */
+    
+    }
+    .select i{
+        font-size: 15px;
+        transition: all 0.1s;
+        /* height: 50px; */
+    }
+    .select{
+        width: 55%;
+        padding:5px 10px ;
+        background-color: rgba(255, 255, 255,255);
+        border-radius: 6px;
+        cursor: pointer;
+        display: flex;
+        align-items:center;
+        justify-content:space-between;
+        border: 2px solid black;
+        height: 40px;
+    }
+    .option{
+        display: flex;
+        padding: 10px;
+        width: 250px;
+        cursor: pointer;
+        position: relative;
+        
+        
+    }
+    
+    .option:hover{
+        background-color: #c7dcff;
+    }
+    
+    .option p{
+        margin-left: 10px;
+        opacity: 0.8;
+    }
+    .option i{
+        opacity: 0.5;
+    }
+    .option_box{
+        box-shadow: 0 0 10 rgb(54, 51, 51);
+        background-color:white;
+        display: none;
+        position: absolute;
+    }
+    .hidden{
+        display: block;
+    }
+    .roted{
+        transform: rotate(180deg);
+    }
+    .search_box{
+        display: flex;
+        margin-right: 30px;
+    
+    }
+    .search_box i{
+    background-color: black;
+    color: white;
+    padding: 14px;
+    
+    font-size: 14px;
+    border-radius: 0 6px 6px 0;
+    cursor:pointer;
+        } 
+    .searchclass{
+        padding: 10px;
+        width: 350px;
+        font-size: 15px;
+        border: 2px solid black;
+        /* border-radius: 6px; */
+        }
+        .message:hover i{
+            color:gold;
+            transition: 2s;
+        }
+    
+        .message{
+            font-size: 22px;
+            color: black;
+            cursor: pointer;
+            margin: 0 12px;
+        }
+    
+        .girl img{
+            width: 55px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .nameid img{
+            width: 65px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+    
+        .nameid p{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .nameid{
+            display: flex;
+            align-items: center;
+            margin: 10px 0 20px 0;
+        }
+        .dropdown{
+            margin-left:100px;
+            width: 250px;
+            box-sizing: 0 0 10px grey;
+            padding: 15px;
+            background-color:rgba(48, 57, 56, 0.119);
+            display: none;
+            position: absolute;
+        }
+        .dropdown ul li{
+            display: flex;
+            padding: 10px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        .dropdown ul li:hover{
+            background-color: #c7dcff;
+        }
+        .dropdown ul li i{
+            color: black;
+            font-size: 18px;
+          
+        }
+        .dropdown ul li p{
+            margin-left: 10px;
+            font-size: 17px;
+        }
+    
+    .block_div{
+        display: block;
+    }
+    
+    .selling_page{
+        margin-left: 40px;
+        border-style:solid;
+        border-width: 4px;
+        border-top-color: rgba(128, 255, 0, 0.635);
+        border-left-color: rgba(10, 0, 23, 0.536);
+        border-bottom-color: rgba(217, 26, 246, 0.547);
+        border-right-color: rgba(227, 49, 49, 0.682);
+        font-size: 15px;
+        cursor: pointer;
+        padding: 8px 12px;
+        border-radius: 12px;
+        background-color: white;
+        color: black;
+        display: flex;
+        width: 90px;
+        justify-content: space-between;
+    }
+    
+    
+    
+    .ad_img img{
+        width: 800px;
+        position: relative;
+        z-index: -1;
+        height: 300px;
+        border: 1px solid rgb(185, 64, 64);
+    }
+    
+    .ad_img{
+        padding: 30px 0 35px 0;
+        width: 800px;
+        margin:auto;
+        margin: top 35px;
+        height: 200px;
+        position: relative;
+    }
+    
+    .ad_img i{
+        padding: 30px 0 35px 0;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        z-index: 0;
+        cursor: pointer;
+    }
+
+.post_img{
+    width: 1110px;
+    display:flex;
+    margin: auto;
+    /* background-color:aquamarine; */
+    margin-top: 150px;
+    margin-bottom: 100pxs;
+}
+.image_discription{
+    width: 700px;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+}
+.image_discription img{
+    width: 700px;
+    height: 500px;
+    padding: 0 140px;
+}
+#prev{
+    color: white;
+}
+#next{
+    color: white;
+}
+.description{
+    padding-left: 20px;
+    border: 1px solid rgba(74, 69, 70, 0.75);
+    border-radius: 5px;
+    background-color: white;
+    border-top: 2px solid greenyellow;
+    padding-bottom: 15px;
+}
+.description h3{
+    padding: 10px 10px 10px 0;
+    font-size: 20px;
+
+}
+.description p{
+    line-height: 20px;
+    color:rgb(25, 23, 23);
+}
+
+.box{
+    background-color: white;
+    border: 1px solid rgb(217, 218, 217);
+    border-radius: 5px;
+    width: 400px;
+    /* margin-top: 50px; */
+    
+    /* height: 160px; */
+    
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+
+}
+.price h3{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+.details{
+    padding-left: 10px;
+}
+.price p{
+    font-size: 25px;
+    font-weight: normal;
+    float: left;
+    margin-right: 10px;
+    padding: 10px 0 10px 10px;
+    cursor: pointer;
+}
+.box span{
+    color: #45454a;
+    padding: 0 0 10px 10px;
+    font-size: 20px;
+}
+.location{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 15px 10px 15px 10px;
+    color: #45454aba;
+}
+.owner_detail img{
+    width: 55px;
+    border-radius: 50%;
+    margin: 10px 10px 8px 10px;
+}
+.owner_detail{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.Owner_description{
+    font-size: 17px;
+    color: #161618;
+    padding: 10px 0 5px 10px;
+}
+.owner_detail h2{
+    font-size: 18px;
+}
+.owner_detail p{
+    font-size: 13px;
+}
+.box a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 125px;
+    border: 2px solid black;
+    margin: 10px;
+    transition: all 0.3s;
+}
+.box a:hover{
+    border: 3px solid black;
+}
+
+#box2{
+    
+    margin-top: 10px;
+    height: 170px;
+}
+#box3{
+    margin-top: 10px;
+}
+#box3 h2{
+    font-size: 18px;
+    padding: 15px;
+}
+#box3 p{
+    font-size: 13px;
+    padding: 0 0 10px 15px;
+}
+#box3 img{
+    width: 400px;
+    /* height: 300px; */
+    padding: 0 15px;
+    padding-bottom: 10px;
+}
